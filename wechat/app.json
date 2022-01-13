@@ -1,0 +1,38 @@
+{
+  "identification": "w5soar",
+  "is_public": true,
+  "name": "企微机器人通知",
+  "version": "0.3",
+  "description": "企业微信机器人通知",
+  "type": "消息通知",
+  "action": [
+    {
+      "name": "企微文本通知",
+      "func": "send_text"
+    }
+  ],
+  "args": {
+    "send_text": [
+      {
+        "key": "webhook_key",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "content",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "mentioned_list",
+        "type": "textarea",
+        "required": false
+      },
+      {
+        "key": "mentioned_mobile_list",
+        "type": "textarea",
+        "required": false
+      }
+    ]
+  }
+}

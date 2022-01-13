@@ -1,0 +1,54 @@
+{
+  "identification": "w5soar",
+  "is_public": true,
+  "name": "insight2",
+  "version": "0.1",
+  "description": "洞察2 API操作",
+  "type": "洞察助手",
+  "action": [
+    {
+      "name": "获取漏洞",
+      "func": "get_vuln"
+    },
+    {
+      "name": "漏洞状态统计",
+      "func": "get_vuln_status_group"
+    }
+  ],
+  "args": {
+    "get_vuln": [
+      {
+        "key": "api",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "token",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "search",
+        "type": "text",
+        "required": false
+      },
+      {
+        "key": "vul_status",
+        "type": "text",
+        "required": false
+      }
+    ],
+    "get_vuln_status_group": [
+      {
+        "key": "api",
+        "type": "text",
+        "required": true
+      },
+      {
+        "key": "token",
+        "type": "text",
+        "required": true
+      }
+    ]
+  }
+}

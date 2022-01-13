@@ -1,0 +1,23 @@
+{
+  "identification": "w5soar",
+  "is_public": true,
+  "name": "漏洞告警",
+  "version": "0.2",
+  "description": "漏洞告警，威胁情报，应急响应",
+  "type": "信息查询",
+  "action": [
+    {
+      "name": "获取阿里云告警",
+      "func": "get_vuln_aliyun"
+    }
+  ],
+  "args": {
+    "get_vuln_aliyun": [
+      {
+        "key": "range_time",
+        "type": "number",
+        "required": false
+      }
+    ]
+  }
+}
